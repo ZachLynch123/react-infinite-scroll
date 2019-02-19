@@ -29,16 +29,17 @@ class App extends Component {
     unsplash.photos.getRandomPhoto({count: 30})
     .then(toJson)
     .then(json => {
+      // Temp array to store the current state
       let arr = this.state.data;
 
+      // for loop to push each element of json array to temp array
       for (var i = 0; i < json.length; i++) {
         arr.push(json[i]);
       }
-
+      // set state to the contents of temp array
       this.setState({
         data: arr
       });
-
     })
   }
 

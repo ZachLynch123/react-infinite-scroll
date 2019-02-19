@@ -1,9 +1,9 @@
 import React from 'react';
 
+// Functional component to display images
 const Images = (props) => {
-    console.log(props.img);
     return(
-        <img src={props.img.urls.thumb}/>
+        <img className="single-img" src={props.img.urls.thumb}/>
     );
 }
 
