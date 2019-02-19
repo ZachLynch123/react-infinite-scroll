@@ -48,6 +48,9 @@ class App extends Component {
     const { data } = this.state;
     return (
       <div className="App">
+      <h1 className="heading">Infinite Scroll UnSplash Code Challenge</h1>
+      <p>Coded by <a href="http://zachlynch123.github.io">Zach Lynch</a></p>
+      <div className="images">
         <InfiniteScroll
         dataLength={this.state.data.length}
         next={this.fetchRandomImages}
@@ -58,6 +61,7 @@ class App extends Component {
           <Images key={image.id} img={image} />
         )}
         </InfiniteScroll>
+        </div>
       </div>
     );
   }
