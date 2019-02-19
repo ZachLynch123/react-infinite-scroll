@@ -2,7 +2,7 @@
   "name": "infinite-scroll",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zachlynch123.github.io/infinite-scroll",
+  "homepage": "https://zachlynch123.github.io/react-infinite-scroll",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.8.2",
