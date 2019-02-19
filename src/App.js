@@ -22,7 +22,7 @@ class App extends Component {
       callbackUrl: "http://localhost:3000/"
     });
 
-    unsplash.photos.listPhotos(2, 15, "latest")
+    unsplash.photos.getRandomPhoto({count: 12})
     .then(toJson)
     .then(json => {
       console.log(json);
@@ -35,7 +35,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <InfiniteScroll
+        dataLength={this.state.data.length}
+        loader={<h4>loading..</h4>}
+        >
 
+        </InfiniteScroll>
       </div>
     );
   }
